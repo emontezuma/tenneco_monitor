@@ -180,17 +180,17 @@ Public Class XtraForm1
 
         procesandoInfoFallas = True
         revisaFlag.Enabled = False
-        'paseaStock()
+        paseaStock()
         cancelarAlertas()
-        'calcularEstimado()
-        'asignarCarga()
-        'alertaSO()
-        'alertaTSE()
-        'alertaTSEAnticipado()
-        'alertaTPE()
-        'alertaTPEAnticipado()
-        'alertaProgramacion()
-        'alertaProgramacionAnticipado()
+        calcularEstimado()
+        asignarCarga()
+        alertaSO()
+        alertaTSE()
+        alertaTSEAnticipado()
+        alertaTPE()
+        alertaTPEAnticipado()
+        alertaProgramacion()
+        alertaProgramacionAnticipado()
         'Se revisan los lotes en espera
 
         procesandoInfoFallas = False
@@ -615,7 +615,7 @@ Public Class XtraForm1
                     End If
                     If mesajeTexto.Length > 0 Then
                         regsAfectados = consultaACT("UPDATE sigma.alarmas SET fin = NOW(), tiempo = TIME_TO_SEC(TIMEDIFF(NOW(), inicio)) WHERE id = " & cargas!id)
-                    regsAfectados = consultaACT("UPDATE sigma.vw_reportes SET estado = 9, atendida = NOW(), tiempo = TIME_TO_SEC(TIMEDIFF(NOW(), activada)) WHERE id NOT IN (SELECT reporte FROM sigma.alarmas WHERE tiempo = 0) AND estado <> 9;")
+                        regsAfectados = consultaACT("UPDATE sigma.vw_reportes SET estado = 9, atendida = NOW(), tiempo = TIME_TO_SEC(TIMEDIFF(NOW(), activada)) WHERE id NOT IN (SELECT reporte FROM sigma.alarmas WHERE tiempo = 0) AND estado <> 9;")
                         If regsAfectados > 0 Then
                             regsAfectados = consultaACT("INSERT INTO sigma.mensajes (alerta, tipo, canal, destino, mensaje) SELECT a.alerta, (80 + a.tipo), a.canal, a.destino, CONCAT('ATENCION La alerta por programación excedida de la carga ', '" & cargas!carga & "', ' ha sido " & mesajeTexto & "!') FROM sigma.mensajes a WHERE a.tipo <= 5 AND a.canal= 4 AND a.alerta IN (SELECT id FROM sigma.vw_reportes WHERE estado = 9 AND informar_resolucion = 'S' AND informado = 'N') GROUP BY a.alerta, (80 + a.tipo), a.canal, a.destino, CONCAT('ATENCION La alerta por programación excedida de la carga ', '" & cargas!carga & "', ' ha sido " & mesajeTexto & "!');INSERT INTO sigma.mensajes (alerta, tipo, canal, destino, mensaje) SELECT a.alerta, (80 + a.tipo), a.canal, a.destino, CONCAT('CARGA ', '" & cargas!carga & "', ' HA SIDO " & mesajeTexto & "!') FROM sigma.mensajes a WHERE a.tipo <= 5 AND a.canal= 4 AND a.alerta IN (SELECT id FROM sigma.vw_reportes WHERE estado = 9 AND informar_resolucion = 'S' AND informado = 'N') GROUP BY a.alerta, (80 + a.tipo), a.canal, a.destino, CONCAT('ATENCION La alerta por programación excedida de la carga ', '" & cargas!carga & "', ' ha sido " & mesajeTexto & "!');UPDATE sigma.vw_reportes SET informado = 'S' WHERE estado = 9 AND informar_resolucion = 'S' AND informado = 'N';UPDATE sigma.cargas SET alarma_rep_p = 'N', alarma_rep_paso = 'N', alarma_rep = 'N' WHERE id = " & cargas!id)
                         End If
@@ -663,7 +663,7 @@ Public Class XtraForm1
                     End If
                 Next
             End If
-            cadSQL = "SELECT a.id, a.equipo, a.estatus, c.proceso, a.fecha, a.completada, (SELECT SUM(cantidad) FROM sigma.programacion WHERE carga = a.id AND estatus = 'A') AS piezas, (SELECT COUNT(*) FROM sigma.lotes WHERE carga = a.id AND estado <= 50) AS avance, (SELECT COUNT(*) FROM sigma.lotes WHERE carga = a.id AND estado = 50 and equipo = a.equipo) AS enequipo FROM sigma.cargas a LEFT JOIN sigma.det_procesos c ON a.equipo = c.id AND c.estatus = 'A' WHERE a.estatus = 'A' AND completada <> 'Y' ORDER BY a.fecha ASC"
+            cadSQL = "SELECT a.id, a.equipo, a.estatus, c.proceso, a.fecha, a.completada, IFNULL((SELECT SUM(cantidad) FROM sigma.programacion WHERE carga = a.id AND estatus = 'A'), 0) AS piezas, (SELECT COUNT(*) FROM sigma.lotes WHERE carga = a.id AND estado <= 50) AS avance, (SELECT COUNT(*) FROM sigma.lotes WHERE carga = a.id AND estado = 50 and equipo = a.equipo) AS enequipo FROM sigma.cargas a LEFT JOIN sigma.det_procesos c ON a.equipo = c.id AND c.estatus = 'A' WHERE a.estatus = 'A' AND completada <> 'Y' ORDER BY a.fecha ASC"
             reader = consultaSEL(cadSQL)
             If reader.Tables(0).Rows.Count > 0 Then
                 For Each cargas In reader.Tables(0).Rows
@@ -2170,8 +2170,8 @@ Public Class XtraForm1
 
 
         Try
-            agregarSolo("Se inicia la aplicación de Envío de correos")
-            Shell(Application.StartupPath & "\tnCorreos.exe", AppWinStyle.MinimizedNoFocus)
+            'agregarSolo("Se inicia la aplicación de Envío de correos")
+            'Shell(Application.StartupPath & "\tnCorreos.exe", AppWinStyle.MinimizedNoFocus)
         Catch ex As Exception
             agregarLOG("Error en la ejecución de la aplicación de envío de correos. Error: " & ex.Message, 7, 0)
         End Try

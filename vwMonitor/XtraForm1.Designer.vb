@@ -71,14 +71,13 @@ Partial Class XtraForm1
         '
         Me.PictureEdit1.EditValue = CType(resources.GetObject("PictureEdit1.EditValue"), Object)
         Me.PictureEdit1.Location = New System.Drawing.Point(0, 0)
-        Me.PictureEdit1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureEdit1.Name = "PictureEdit1"
         Me.PictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(183, Byte), Integer), CType(CType(2, Byte), Integer))
         Me.PictureEdit1.Properties.Appearance.Options.UseBackColor = True
         Me.PictureEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
         Me.PictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.[Auto]
         Me.PictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom
-        Me.PictureEdit1.Size = New System.Drawing.Size(106, 90)
+        Me.PictureEdit1.Size = New System.Drawing.Size(87, 73)
         Me.PictureEdit1.TabIndex = 3
         '
         'TileBar1
@@ -87,11 +86,9 @@ Partial Class XtraForm1
         Me.TileBar1.Dock = System.Windows.Forms.DockStyle.Top
         Me.TileBar1.DropDownOptions.BeakColor = System.Drawing.Color.Empty
         Me.TileBar1.Location = New System.Drawing.Point(0, 0)
-        Me.TileBar1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TileBar1.Name = "TileBar1"
-        Me.TileBar1.Padding = New System.Windows.Forms.Padding(27, 9, 27, 9)
         Me.TileBar1.ScrollMode = DevExpress.XtraEditors.TileControlScrollMode.ScrollButtons
-        Me.TileBar1.Size = New System.Drawing.Size(1561, 90)
+        Me.TileBar1.Size = New System.Drawing.Size(1277, 73)
         Me.TileBar1.TabIndex = 2
         Me.TileBar1.Text = "TileBar1"
         '
@@ -127,10 +124,9 @@ Partial Class XtraForm1
         Me.LabelControl1.Appearance.Options.UseBackColor = True
         Me.LabelControl1.Appearance.Options.UseFont = True
         Me.LabelControl1.Appearance.Options.UseForeColor = True
-        Me.LabelControl1.Location = New System.Drawing.Point(114, 9)
-        Me.LabelControl1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.LabelControl1.Location = New System.Drawing.Point(93, 7)
         Me.LabelControl1.Name = "LabelControl1"
-        Me.LabelControl1.Size = New System.Drawing.Size(344, 27)
+        Me.LabelControl1.Size = New System.Drawing.Size(279, 23)
         Me.LabelControl1.TabIndex = 8
         Me.LabelControl1.Text = "MONITOR DE INCIDENCIAS"
         '
@@ -140,12 +136,11 @@ Partial Class XtraForm1
         Me.LabelControl2.Appearance.ForeColor = System.Drawing.Color.Black
         Me.LabelControl2.Appearance.Options.UseBackColor = True
         Me.LabelControl2.Appearance.Options.UseForeColor = True
-        Me.LabelControl2.Location = New System.Drawing.Point(161, 35)
-        Me.LabelControl2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.LabelControl2.Location = New System.Drawing.Point(93, 27)
         Me.LabelControl2.Name = "LabelControl2"
-        Me.LabelControl2.Size = New System.Drawing.Size(229, 21)
+        Me.LabelControl2.Size = New System.Drawing.Size(185, 17)
         Me.LabelControl2.TabIndex = 9
-        Me.LabelControl2.Text = "Versión 1.00 (17Sep2019)"
+        Me.LabelControl2.Text = "Versión 1.20 (22Oct2019)"
         '
         'HyperlinkLabelControl1
         '
@@ -159,10 +154,9 @@ Partial Class XtraForm1
         Me.HyperlinkLabelControl1.AppearanceHovered.LinkColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Question
         Me.HyperlinkLabelControl1.AppearanceHovered.Options.UseForeColor = True
         Me.HyperlinkLabelControl1.AppearanceHovered.Options.UseLinkColor = True
-        Me.HyperlinkLabelControl1.Location = New System.Drawing.Point(114, 62)
-        Me.HyperlinkLabelControl1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.HyperlinkLabelControl1.Location = New System.Drawing.Point(93, 50)
         Me.HyperlinkLabelControl1.Name = "HyperlinkLabelControl1"
-        Me.HyperlinkLabelControl1.Size = New System.Drawing.Size(283, 21)
+        Me.HyperlinkLabelControl1.Size = New System.Drawing.Size(231, 17)
         Me.HyperlinkLabelControl1.TabIndex = 3
         Me.HyperlinkLabelControl1.Text = "Ir al sitio de Cronos Integración"
         '
@@ -173,30 +167,27 @@ Partial Class XtraForm1
         Me.GroupControl1.Controls.Add(Me.ComboBoxEdit2)
         Me.GroupControl1.Controls.Add(Me.LabelControl4)
         Me.GroupControl1.Controls.Add(Me.SimpleButton1)
-        Me.GroupControl1.Location = New System.Drawing.Point(11, 96)
-        Me.GroupControl1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupControl1.Location = New System.Drawing.Point(9, 78)
         Me.GroupControl1.Name = "GroupControl1"
-        Me.GroupControl1.Size = New System.Drawing.Size(686, 93)
+        Me.GroupControl1.Size = New System.Drawing.Size(561, 75)
         Me.GroupControl1.TabIndex = 16
         Me.GroupControl1.Text = "Visualización"
         '
         'ComboBoxEdit2
         '
-        Me.ComboBoxEdit2.Location = New System.Drawing.Point(224, 46)
-        Me.ComboBoxEdit2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ComboBoxEdit2.Location = New System.Drawing.Point(183, 37)
         Me.ComboBoxEdit2.Name = "ComboBoxEdit2"
         Me.ComboBoxEdit2.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.ComboBoxEdit2.Properties.Items.AddRange(New Object() {"Normal", "Muy pequeña", "Pequeña", "Grande", "Muy grande", "Extra grande"})
         Me.ComboBoxEdit2.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
-        Me.ComboBoxEdit2.Size = New System.Drawing.Size(210, 30)
+        Me.ComboBoxEdit2.Size = New System.Drawing.Size(172, 24)
         Me.ComboBoxEdit2.TabIndex = 3
         '
         'LabelControl4
         '
-        Me.LabelControl4.Location = New System.Drawing.Point(15, 49)
-        Me.LabelControl4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.LabelControl4.Location = New System.Drawing.Point(12, 40)
         Me.LabelControl4.Name = "LabelControl4"
-        Me.LabelControl4.Size = New System.Drawing.Size(185, 21)
+        Me.LabelControl4.Size = New System.Drawing.Size(149, 17)
         Me.LabelControl4.TabIndex = 2
         Me.LabelControl4.Text = "&Tamaño de la fuente"
         '
@@ -205,10 +196,9 @@ Partial Class XtraForm1
         Me.SimpleButton1.ImageOptions.Image = CType(resources.GetObject("SimpleButton1.ImageOptions.Image"), System.Drawing.Image)
         Me.SimpleButton1.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter
         Me.SimpleButton1.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft
-        Me.SimpleButton1.Location = New System.Drawing.Point(456, 42)
-        Me.SimpleButton1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.SimpleButton1.Location = New System.Drawing.Point(373, 34)
         Me.SimpleButton1.Name = "SimpleButton1"
-        Me.SimpleButton1.Size = New System.Drawing.Size(210, 36)
+        Me.SimpleButton1.Size = New System.Drawing.Size(172, 29)
         Me.SimpleButton1.TabIndex = 4
         Me.SimpleButton1.Text = "Inicializar pantalla"
         '
@@ -295,17 +285,15 @@ Partial Class XtraForm1
         Me.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.barDockControlTop.Location = New System.Drawing.Point(0, 0)
         Me.barDockControlTop.Manager = Me.BarManager1
-        Me.barDockControlTop.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.barDockControlTop.Size = New System.Drawing.Size(1561, 0)
+        Me.barDockControlTop.Size = New System.Drawing.Size(1277, 0)
         '
         'barDockControlBottom
         '
         Me.barDockControlBottom.CausesValidation = False
         Me.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 689)
+        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 557)
         Me.barDockControlBottom.Manager = Me.BarManager1
-        Me.barDockControlBottom.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.barDockControlBottom.Size = New System.Drawing.Size(1561, 39)
+        Me.barDockControlBottom.Size = New System.Drawing.Size(1277, 32)
         '
         'barDockControlLeft
         '
@@ -313,17 +301,15 @@ Partial Class XtraForm1
         Me.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left
         Me.barDockControlLeft.Location = New System.Drawing.Point(0, 0)
         Me.barDockControlLeft.Manager = Me.BarManager1
-        Me.barDockControlLeft.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 689)
+        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 557)
         '
         'barDockControlRight
         '
         Me.barDockControlRight.CausesValidation = False
         Me.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right
-        Me.barDockControlRight.Location = New System.Drawing.Point(1561, 0)
+        Me.barDockControlRight.Location = New System.Drawing.Point(1277, 0)
         Me.barDockControlRight.Manager = Me.BarManager1
-        Me.barDockControlRight.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.barDockControlRight.Size = New System.Drawing.Size(0, 689)
+        Me.barDockControlRight.Size = New System.Drawing.Size(0, 557)
         '
         'SimpleButton3
         '
@@ -331,10 +317,9 @@ Partial Class XtraForm1
         Me.SimpleButton3.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.SimpleButton3.ImageOptions.SvgImage = CType(resources.GetObject("SimpleButton3.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
         Me.SimpleButton3.ImageOptions.SvgImageSize = New System.Drawing.Size(48, 48)
-        Me.SimpleButton3.Location = New System.Drawing.Point(1456, 7)
-        Me.SimpleButton3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.SimpleButton3.Location = New System.Drawing.Point(1191, 6)
         Me.SimpleButton3.Name = "SimpleButton3"
-        Me.SimpleButton3.Size = New System.Drawing.Size(92, 75)
+        Me.SimpleButton3.Size = New System.Drawing.Size(75, 61)
         Me.SimpleButton3.TabIndex = 26
         Me.SimpleButton3.ToolTip = "Detiene la aplicación"
         Me.SimpleButton3.ToolTipIconType = DevExpress.Utils.ToolTipIconType.Warning
@@ -346,10 +331,9 @@ Partial Class XtraForm1
         Me.SimpleButton2.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.SimpleButton2.ImageOptions.SvgImage = CType(resources.GetObject("SimpleButton2.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
         Me.SimpleButton2.ImageOptions.SvgImageSize = New System.Drawing.Size(48, 48)
-        Me.SimpleButton2.Location = New System.Drawing.Point(1456, 6)
-        Me.SimpleButton2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.SimpleButton2.Location = New System.Drawing.Point(1191, 5)
         Me.SimpleButton2.Name = "SimpleButton2"
-        Me.SimpleButton2.Size = New System.Drawing.Size(92, 78)
+        Me.SimpleButton2.Size = New System.Drawing.Size(75, 63)
         Me.SimpleButton2.TabIndex = 0
         Me.SimpleButton2.ToolTip = "Reanuda la aplicación"
         Me.SimpleButton2.ToolTipIconType = DevExpress.Utils.ToolTipIconType.Exclamation
@@ -384,25 +368,25 @@ Partial Class XtraForm1
         Me.ContextMenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.VerElLogToolStripMenuItem, Me.DetenerElMonitorToolStripMenuItem, Me.ToolStripMenuItem1, Me.ReanudarElMonitorToolStripMenuItem})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(271, 88)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(230, 88)
         '
         'VerElLogToolStripMenuItem
         '
         Me.VerElLogToolStripMenuItem.Image = Global.vwMonitor.My.Resources.Resources.icons8_minutero_24
         Me.VerElLogToolStripMenuItem.Name = "VerElLogToolStripMenuItem"
-        Me.VerElLogToolStripMenuItem.Size = New System.Drawing.Size(270, 26)
+        Me.VerElLogToolStripMenuItem.Size = New System.Drawing.Size(229, 26)
         Me.VerElLogToolStripMenuItem.Text = "Ver el log"
         '
         'DetenerElMonitorToolStripMenuItem
         '
         Me.DetenerElMonitorToolStripMenuItem.Name = "DetenerElMonitorToolStripMenuItem"
-        Me.DetenerElMonitorToolStripMenuItem.Size = New System.Drawing.Size(267, 6)
+        Me.DetenerElMonitorToolStripMenuItem.Size = New System.Drawing.Size(226, 6)
         '
         'ToolStripMenuItem1
         '
         Me.ToolStripMenuItem1.Image = Global.vwMonitor.My.Resources.Resources.icons8_pausa_24__1_
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(270, 26)
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(229, 26)
         Me.ToolStripMenuItem1.Text = "Detener el monitor"
         '
         'ReanudarElMonitorToolStripMenuItem
@@ -410,16 +394,15 @@ Partial Class XtraForm1
         Me.ReanudarElMonitorToolStripMenuItem.Enabled = False
         Me.ReanudarElMonitorToolStripMenuItem.Image = Global.vwMonitor.My.Resources.Resources.icons8_play_24
         Me.ReanudarElMonitorToolStripMenuItem.Name = "ReanudarElMonitorToolStripMenuItem"
-        Me.ReanudarElMonitorToolStripMenuItem.Size = New System.Drawing.Size(270, 26)
+        Me.ReanudarElMonitorToolStripMenuItem.Size = New System.Drawing.Size(229, 26)
         Me.ReanudarElMonitorToolStripMenuItem.Text = "Reanudar el monitor"
         '
         'ListBoxControl1
         '
         Me.ListBoxControl1.Items.AddRange(New Object() {"2019-Jun-14 23:00:15 Se generó un error", "2019-Jun-14 23:00:15 Se hizo la llamada"})
-        Me.ListBoxControl1.Location = New System.Drawing.Point(15, 196)
-        Me.ListBoxControl1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ListBoxControl1.Location = New System.Drawing.Point(12, 159)
         Me.ListBoxControl1.Name = "ListBoxControl1"
-        Me.ListBoxControl1.Size = New System.Drawing.Size(709, 356)
+        Me.ListBoxControl1.Size = New System.Drawing.Size(580, 288)
         Me.ListBoxControl1.TabIndex = 31
         '
         'correos
@@ -430,13 +413,13 @@ Partial Class XtraForm1
         'mensajes
         '
         Me.mensajes.Enabled = True
-        Me.mensajes.Interval = 5000
+        Me.mensajes.Interval = 60000
         '
         'XtraForm1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 21.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1561, 728)
+        Me.ClientSize = New System.Drawing.Size(1277, 589)
         Me.Controls.Add(Me.ListBoxControl1)
         Me.Controls.Add(Me.SimpleButton2)
         Me.Controls.Add(Me.SimpleButton3)
@@ -451,7 +434,6 @@ Partial Class XtraForm1
         Me.Controls.Add(Me.barDockControlBottom)
         Me.Controls.Add(Me.barDockControlTop)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MinimumSize = New System.Drawing.Size(610, 520)
         Me.Name = "XtraForm1"
         Me.Text = "Monitor de incidencias"
